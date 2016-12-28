@@ -65,7 +65,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.anaMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cikisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.haziranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -76,6 +75,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.kwToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -86,7 +86,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.kwToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -135,8 +134,7 @@
             // anaMenuToolStripMenuItem
             // 
             this.anaMenuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cikisToolStripMenuItem,
-            this.haziranToolStripMenuItem});
+            this.cikisToolStripMenuItem});
             this.anaMenuToolStripMenuItem.Name = "anaMenuToolStripMenuItem";
             this.anaMenuToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.anaMenuToolStripMenuItem.Text = "Ana Menu";
@@ -144,16 +142,9 @@
             // cikisToolStripMenuItem
             // 
             this.cikisToolStripMenuItem.Name = "cikisToolStripMenuItem";
-            this.cikisToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+            this.cikisToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.cikisToolStripMenuItem.Text = "Cikis";
             this.cikisToolStripMenuItem.Click += new System.EventHandler(this.cikisToolStripMenuItem_Click);
-            // 
-            // haziranToolStripMenuItem
-            // 
-            this.haziranToolStripMenuItem.Name = "haziranToolStripMenuItem";
-            this.haziranToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
-            this.haziranToolStripMenuItem.Text = "Kisayol Rapor";
-            this.haziranToolStripMenuItem.Click += new System.EventHandler(this.haziranToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -256,6 +247,13 @@
             this.toolStripMenuItem3.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem3.Text = "Aylik Rapor";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem_Click);
+            // 
+            // kwToolStripMenuItem
+            // 
+            this.kwToolStripMenuItem.Name = "kwToolStripMenuItem";
+            this.kwToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.kwToolStripMenuItem.Text = "kw";
+            this.kwToolStripMenuItem.Click += new System.EventHandler(this.kwToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -422,13 +420,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(773, 573);
             this.dataGridView1.TabIndex = 0;
             // 
-            // kwToolStripMenuItem
-            // 
-            this.kwToolStripMenuItem.Name = "kwToolStripMenuItem";
-            this.kwToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.kwToolStripMenuItem.Text = "kw";
-            this.kwToolStripMenuItem.Click += new System.EventHandler(this.kwToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -491,7 +482,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem haziranToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kwToolStripMenuItem;
     }
 }

@@ -215,16 +215,6 @@ namespace TurbinRapor
             }
         }
 
-        private void haziranToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DateTime start = new DateTime(2016, 9, 25, 0, 0, 0);
-            DateTime end = new DateTime(2016, 9, 28, 23, 59, 59);
-
-            TimeSpan ReportPeriod = end - start;
-
-            new ReportManager().GenerateReport(start,end, @"D:\25eylul-28eylul.csv");
-        }
-
         private void kwToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DateTime start = new DateTime(2016, 9, 25, 0, 0, 0);
