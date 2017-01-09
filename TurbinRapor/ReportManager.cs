@@ -6,7 +6,7 @@ using System.Text;
 
 namespace TurbinRapor
 {
-    class ReportManager
+    class ReportManager : IDisposable
     {
         StreamWriter ReportWriter;
 
@@ -143,6 +143,22 @@ namespace TurbinRapor
             CalculatedKW = SQRT3 * PowerFactor * VACLL * Amp;
 
             return CalculatedKW;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                // free managed resources
+                ReportWriter.Dispose();
+            }
+            // free native resources if there are any.
         }
     }
 }
