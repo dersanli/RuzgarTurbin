@@ -47,5 +47,10 @@ namespace TurbinRapor
         {
             new MainForm().Show(this);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new PGUtils().TestPGSql();
+        }
     }
 }

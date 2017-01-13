@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DisplayValues = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,11 +120,22 @@
             this.DisplayValues.UseVisualStyleBackColor = true;
             this.DisplayValues.Click += new System.EventHandler(this.DisplayValues_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(204, 112);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 29);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Insert pgSQL";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CreateReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 153);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.DisplayValues);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ReportCreate);
@@ -147,5 +159,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Button DisplayValues;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -16,11 +16,16 @@ namespace TurbinRapor
                     cmd.Connection = conn;
 
                     // Insert some data
-                    cmd.CommandText = "INSERT INTO values (id, textvalue) VALUES (3, 'Hello world')";
-                    cmd.ExecuteNonQuery();
+                    Random random = new Random();
+                    for (int i = 0; i < 5; i++)
+                    {
+                        cmd.CommandText = "INSERT INTO tabel (\"TVALUE\") VALUES ('Hello " + random.Next(0,100) + "')";
+                        cmd.ExecuteNonQuery();
+                    }
+                    random = null;
 
                     // Retrieve all rows
-                    cmd.CommandText = "SELECT textvalue FROM values";
+                    cmd.CommandText = "SELECT \"TVALUE\" FROM tabel";
                     using (var reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
