@@ -1,12 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-# SharpDevelop 5.1
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateXFoilPolar", "CreateXFoilPolar\CreateXFoilPolar.csproj", "{93441E6A-B30B-4076-872D-14E3CAA1F1BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurbinRapor", "TurbinRapor\TurbinRapor.csproj", "{1A8837E8-D2A8-4177-8494-141B2BE49E0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertDataToDB", "InsertDataToDB\InsertDataToDB.csproj", "{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A8837E8-D2A8-4177-8494-141B2BE49E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A8837E8-D2A8-4177-8494-141B2BE49E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A8837E8-D2A8-4177-8494-141B2BE49E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A8837E8-D2A8-4177-8494-141B2BE49E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
