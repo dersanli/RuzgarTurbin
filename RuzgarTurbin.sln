@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurbinRapor", "TurbinRapor\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertDataToDB", "InsertDataToDB\InsertDataToDB.csproj", "{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBTransfer", "DBTransfer\DBTransfer.csproj", "{A3C19AE4-D3D2-4BC8-B6E7-706E3945272B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93441E6A-B30B-4076-872D-14E3CAA1F1BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C19AE4-D3D2-4BC8-B6E7-706E3945272B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C19AE4-D3D2-4BC8-B6E7-706E3945272B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C19AE4-D3D2-4BC8-B6E7-706E3945272B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C19AE4-D3D2-4BC8-B6E7-706E3945272B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6553686-3CDD-44B4-BD4A-2999F1DDECF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
