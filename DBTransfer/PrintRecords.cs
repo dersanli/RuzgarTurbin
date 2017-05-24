@@ -11,7 +11,7 @@ namespace DBTransfer
         StreamWriter ReportWriter;
 
         string CSVDelimiter = ConfigurationManager.AppSettings["CSVDelimiter"];
-        private double SQRT3 = Math.Sqrt(3.0);
+        double SQRT3 = Math.Sqrt(3.0);
 
         public void GenerateReport(TimeSpan ReportPeriod, string OutputFile)
         {
