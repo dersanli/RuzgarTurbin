@@ -188,6 +188,19 @@ namespace TurbinRapor
             toolStripSplitButton1.ShowDropDown();
         }
 
+        private void treeView1_BeforeCheck(object sender, TreeViewCancelEventArgs e)
+        {
+            if (e.Node.Name.StartsWith("Top"))
+            {
+                return;
+            }
+
+            if (e.Node.Checked)
+            {
+                QueryColumns.Remove(e.Node.Name);
+            }
+        }
+
         private void treeView1_AfterCheck(object sender, TreeViewEventArgs e)
         {
             if(e.Node.Name.StartsWith("Top"))
@@ -200,19 +213,6 @@ namespace TurbinRapor
                 QueryColumns.Add(e.Node.Name);
             }
             DisplayChart();
-        }
-
-        private void treeView1_BeforeCheck(object sender, TreeViewCancelEventArgs e)
-        {
-            if (e.Node.Name.StartsWith("Top"))
-            {
-                return;
-            }
-
-            if (e.Node.Checked)
-            {
-                QueryColumns.Remove(e.Node.Name);
-            }
         }
 
         private void kwToolStripMenuItem_Click(object sender, EventArgs e)

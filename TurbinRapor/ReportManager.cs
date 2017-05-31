@@ -57,7 +57,7 @@ namespace TurbinRapor
 
             ReportHeader.AppendLine("S O Y U T W I N D  --  R U Z G A R  T U R B I N  R A P O R U");
             ReportHeader.AppendLine("Corum Il Ozel Idaresi 250kW Ruzgar Turbini - Bogazkale / Corum");
-            ReportHeader.AppendLine("Tarih: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+            ReportHeader.AppendLine("Raporlama Tarihi: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
             ReportHeader.AppendLine();
 
             ReportWriter.Write(ReportHeader);
@@ -89,7 +89,7 @@ namespace TurbinRapor
 
             ReportDataset.Clear();
 
-            Maximums.AppendLine("Tablodaki En Yuksek Ruzgar Hizi ve Tarihi: " + MaxWindSpeed + " m/s - " + MaxWindSpeedDateTime);
+            Maximums.AppendLine("Rapordaki En Yuksek Ruzgar Hizi ve Tarihi: " + MaxWindSpeed + " m/s - " + MaxWindSpeedDateTime);
             Maximums.AppendLine();
 
             ReportWriter.Write(Maximums);
@@ -103,6 +103,7 @@ namespace TurbinRapor
 
             string CSVLine = string.Empty;
 
+            // Write the Column Names
             foreach (DataColumn dc in Table.Columns)
             {
                 CSVLine += dc.ColumnName + CSVDelimiter;
@@ -110,6 +111,8 @@ namespace TurbinRapor
 
             TableWriter.AppendLine(CSVLine.Substring(0, CSVLine.Length - 1));
 
+
+            // Dump the Rows in the Datatable to CSV String
             foreach (DataRow dr in Table.Rows)
             {
                 CSVLine = string.Empty;
@@ -128,7 +131,7 @@ namespace TurbinRapor
                         CSVLine += cell.ToString() + CSVDelimiter;
                     }
                 }
-
+                
                 TableWriter.AppendLine(CSVLine.Substring(0, CSVLine.Length - 1));
             }
 
@@ -138,9 +141,11 @@ namespace TurbinRapor
 
         private double CalculateKW(double VACLL, double Amp, double PowerFactor = 0.99)
         {
+            double VACLN = VACLL / SQRT3; // Divide by the phase and convert to Line-Neutral voltage
+
             double CalculatedKW = 0.0f;
 
-            CalculatedKW = SQRT3 * PowerFactor * VACLL * Amp;
+            CalculatedKW = VACLN * Amp * PowerFactor;
 
             return CalculatedKW;
         }

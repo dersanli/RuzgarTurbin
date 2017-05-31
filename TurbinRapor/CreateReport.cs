@@ -50,7 +50,14 @@ namespace TurbinRapor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new PGUtils().TestPGSql();
+            //new PGUtils().TestPGSql();
+
+            // Added GENERATEDPOWER COLUMN
+            // This is to fill the Generatedpower column
+
+
+
+
         }
     }
 }
