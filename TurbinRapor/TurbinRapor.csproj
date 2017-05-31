@@ -89,6 +89,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dbo.EatKek.sql" />
+    <Content Include="SQLQuery1.sql" />
+    <Content Include="SQLQuery2.sql" />
     <Content Include="StoredProcedureTemplate.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
